@@ -40,3 +40,9 @@ docker compose up --build
 ### Build & Start the Service
 ```bash
 docker compose up --build
+# → Service will be available at http://localhost:8080
+
+### Health Check
+curl http://localhost:8080/actuator/health # or /healthz if you use
+Go/Node
+
